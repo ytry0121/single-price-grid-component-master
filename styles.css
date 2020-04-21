@@ -14,6 +14,9 @@ h2 {
     color: hsl(71, 73%, 54%);
     font-size: 1.17rem;
 }
+h3{
+    margin-bottom: 0.8rem;
+}
 
 p {
     color: hsl(218, 22%, 67%);
@@ -24,13 +27,14 @@ p {
     display: grid;
     grid-template-areas: 'top-summry top-summry' 'sign-up why-us';
     grid-template-columns: 50% 50%;
-    height: 32rem;
+    grid-template-rows:45% 55%;
+    height: 30rem;
     margin: 10rem auto;
     width: 40rem;
 }
 
 .card {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2.5rem 1rem;
 }
 
 .top-summry {
@@ -82,13 +86,14 @@ button:hover {
 }
 
 ul {
+    margin-bottom:0;
     padding: 0;
 }
 
 li {
     color: hsl(204, 43%, 90%);
     list-style-type: none;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 @media only screen and (max-width:650px) {
