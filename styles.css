@@ -1,0 +1,110 @@
+body {
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 1.5rem;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 1.17rem;
+}
+
+p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 'top-summry top-summry' 'sign-up why-us';
+    grid-template-columns: 50% 50%;
+    height: 32rem;
+    margin: 10rem auto;
+    width: 40rem;
+}
+
+.card {
+    padding: 1.5rem 2rem;
+}
+
+.top-summry {
+    background-color: hsl(0, 0%, 100%);
+    grid-area: top-summry;
+}
+
+.sign-up {
+    background-color: hsl(179, 62%, 43%);
+    grid-area: sign-up;
+}
+
+.price-per-month {
+    color: hsl(204, 43%, 90%);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.price {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.per-month {
+    position: absolute;
+    left: 4.5rem;
+    top: .7rem;
+}
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    margin: 2rem 0 0;
+    padding: 1rem 5.5rem;
+}
+
+button:hover {
+    box-shadow: 0 5px 10px 0px hsl(179, 62%, 29%);
+}
+
+.why-us {
+    background-color: hsl(179, 62%, 47%);
+    grid-area: why-us;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    color: hsl(204, 43%, 90%);
+    list-style-type: none;
+    line-height: 1.5;
+}
+
+@media only screen and (max-width:650px) {
+    body {
+        font-size: 14px;
+        min-width: 375px;
+    }
+    .wrapper {
+        display: block;
+        height: 120rem;
+        width: 85%;
+    }
+    .card {
+        padding: 1.5rem;
+    }
+    button {
+        padding: 0.8rem 6rem;
+    }
+}
